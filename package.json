@@ -15,6 +15,7 @@
   },
   "author": "duowb <duowenbo@gmail.com>",
   "files": [
+    "bin",
     "dist"
   ],
   "main": "./dist/index.js",
@@ -26,6 +27,9 @@
       "import": "./dist/index.js"
     },
     "./package.json": "./package.json"
+  },
+  "bin": {
+    "rmg": "./bin/rmg.mjs"
   },
   "publishConfig": {
     "access": "public"
@@ -41,9 +45,14 @@
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
   },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "rimraf": "^6.0.1"
+  },
   "devDependencies": {
     "@sxzz/eslint-config": "^4.4.0",
     "@sxzz/prettier-config": "^2.0.2",
+    "@types/minimist": "^1.2.5",
     "@types/node": "^22.7.7",
     "bumpp": "^9.7.1",
     "eslint": "^9.13.0",
