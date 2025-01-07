@@ -15,6 +15,7 @@ npm i rm-ignore-file
 ```bash
 rmg
 ```
+![rmg](./imgs/rmg.png)
 
 - Dry run
 
@@ -22,11 +23,15 @@ rmg
 rmg -d
 ```
 
+![dry run](./imgs/dry_run.png)
+
 - Skip certain folders or files
 
 ```bash
 rmg dist node_* *.log
 ```
+
+![skip](./imgs/skip.png)
 
 ## License
 
